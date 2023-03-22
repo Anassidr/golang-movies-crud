@@ -89,7 +89,7 @@ func main() {
 	r.HandleFunc("/movies/{id}", getMovie).Methods("GET")
 	r.HandleFunc("/movies", createMovie).Methods("POST")     //curl http://localhost:8000/movies --include -d @body.json --request "POST"
 	r.HandleFunc("/movies/{id}", updateMovie).Methods("PUT") //curl http://localhost:8000/movies/1421522 --include --header "Content-Type: application/json" -d @body.json --request "PUT"
-	r.HandleFunc("/movies/{id}", deleteMovie).Methods("PUT")
+	r.HandleFunc("/movies/{id}", deleteMovie).Methods("DELETE")
 
 	fmt.Printf("Starting server at port 8000\n")
 	log.Fatal(http.ListenAndServe(":8000", r))
