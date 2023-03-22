@@ -1,0 +1,9 @@
+{
+    "id": "9",
+    "isbn": "9999", 
+    "title": "Reservoir Dogs",
+    "director": {
+        "firstname": "Sherone", 
+        "lastname": "hmmm"
+        }
+    }
